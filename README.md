@@ -1,16 +1,59 @@
-# React + Vite
+# Task Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
 
-Currently, two official plugins are available:
+A responsive Task Management Application built with React and Tailwind CSS. This application allows users to manage tasks efficiently with features like task creation, editing, deletion, searching, filtering, sorting, and Local Storage persistence.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Login page (UI only)
+* Email and password validation
+* Dashboard with task statistics
+* Create, Edit, Delete tasks
+* Mark tasks as Completed or Pending
+* Search tasks by title
+* Filter by status and priority
+* Sort by title, due date, and priority
+* Form validation
+* Local Storage support
+* Responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+* React
+* React Router DOM
+* Tailwind CSS
+* JavaScript (ES6)
+* Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/task-management-app.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd task-management-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open the application in your browser:
+
+```text
+http://localhost:5173
+```
