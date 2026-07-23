@@ -52,7 +52,7 @@ const TaskForm = ({ addTask, editTask, updateTask }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-white p-6 rounded shadow mb-6 space-y-3"
+      className="bg-white p-2 rounded shadow mb-6 space-y-3m justify-centre flex flex-col gap-2 align-centre"
     >
       <input
         type="text"
@@ -60,7 +60,7 @@ const TaskForm = ({ addTask, editTask, updateTask }) => {
         placeholder="Title"
         value={task.title}
         onChange={handleChange}
-        className="border p-2 rounded w-full"
+        className="border p-2 rounded w-600px"
       />
 
       <textarea
@@ -68,7 +68,7 @@ const TaskForm = ({ addTask, editTask, updateTask }) => {
         placeholder="Description"
         value={task.description}
         onChange={handleChange}
-        className="border p-2 rounded w-full"
+        className="border p-2 rounded w-600px"
       />
 
       <input
@@ -76,21 +76,21 @@ const TaskForm = ({ addTask, editTask, updateTask }) => {
         name="dueDate"
         value={task.dueDate}
         onChange={handleChange}
-        className="border p-2 rounded w-full"
+        className="border p-2 rounded w-600px"
       />
 
       <select
         name="priority"
         value={task.priority}
         onChange={handleChange}
-        className="border p-2 rounded w-full"
+        className="border p-2 rounded w-600px"
       >
         <option>Low</option>
         <option>Medium</option>
         <option>High</option>
       </select>
 
-      <button className="bg-blue-600 text-white px-4 py-2 rounded">
+      <button className="bg-blue-600 text-white px-4 py-2 rounded w-600px">
         {editTask ? "Update Task" : "Add Task"}
       </button>
     </form>

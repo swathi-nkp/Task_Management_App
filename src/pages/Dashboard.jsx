@@ -122,6 +122,7 @@ const Dashboard = () => {
           Task Management Dashboard
         </h1>
 
+        {/* Dashboard Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 
           <div className="bg-blue-500 text-white rounded-lg shadow p-6">
@@ -166,13 +167,15 @@ const Dashboard = () => {
           setSortBy={setSortBy}
         />
 
-        {/* Task Form */}
-        <TaskForm
+       <div className="flex justify-center my-8">
+        <div className="w-full max-w-2xl">
+         <TaskForm
           addTask={addTask}
-          editTask={editTask}
-          updateTask={updateTask}
+         editTask={editTask}
+         updateTask={updateTask}
         />
-
+       </div>
+        </div>
         {/* Task List */}
         <div className="mt-8">
 
